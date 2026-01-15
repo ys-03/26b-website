@@ -111,7 +111,7 @@
 .contact-btn {
     display: inline-flex;
     align-items: center;
-    background-color: #212529;
+    background-color: #004488;
     color: white;
     text-decoration: none;
     padding: 0.6rem 1.2rem;
@@ -123,7 +123,7 @@
 }
 
 .contact-btn:hover {
-    background-color: #343a40;
+    background-color: #0048e4;
     color: white;
     text-decoration: none;
     transform: translateY(-2px);
@@ -353,4 +353,15 @@ footer {
     .post-author-name {
         font-size: 1rem;
     }
+}
+
+/* 深色模式下班级墙字体颜色修正 */
+[data-theme="dark"] .post-author-name,
+[data-theme="dark"] .post-title,
+[data-theme="dark"] .post-content {
+    color: var(--text-main);
+}
+
+[data-theme="dark"] .post-date {
+    color: var(--text-muted);
 }
