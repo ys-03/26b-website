@@ -10,13 +10,13 @@ import Activities from './pages/Activities';
 import Journal from './pages/Journal';
 import Wall from './pages/Wall';
 import Contact from './pages/Contact';
-import MusicPlayer from './components/MusicPlayer'; // <-- Import MusicPlayer
+import MusicPlayer from './components/MusicPlayer';
+import EasterEgg from './components/EasterEgg'; // already imported
 
 function App() {
   const [showIntro, setShowIntro] = useState(true);
 
   const handleEnter = () => {
-    // Add fade-out class and hide after animation
     setTimeout(() => setShowIntro(false), 600);
   };
 
@@ -39,8 +39,11 @@ function App() {
         </main>
         <Footer />
 
-        {/* Render the Music Player here */}
-        <MusicPlayer /> 
+        {/* Floating Music Player */}
+        <MusicPlayer />
+
+        {/* Easter Egg glitch functionality */}
+        <EasterEgg />
       </Router>
     </>
   );
